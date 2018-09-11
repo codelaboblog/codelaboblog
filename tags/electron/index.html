@@ -10,7 +10,7 @@
   
   <title>
     
-      search | CodeLabo
+      CodeLabo
     
   </title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -149,40 +149,41 @@
   </div>
 </header>
 
-    <section id="search">
-  <form>
-    <input type="text" class="search-input" id="search-input" placeholder="search" autocomplete="off">
-  </form>
-  <div id="search-result"></div>
-  <p class="search-no-result">No result</p>
+    <div id="article-banner">
+  <h2>Archives</h2>
+</div>
+<main class="app-body" id="archives">
+  
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2018
+  </h1>
+  <div class="section-list">
+    
+    
+      <div class="section-list-item">
+        <a href="/2018/09/11/viet-desktop-app-voi-electron-hello-world/" class="archive-title">Viết desktop app với Electron - Hello world</a>
+        <p class="archive-date">09-11</p>
+      </div>
+    
+      <div class="section-list-item">
+        <a href="/2018/09/10/gioi-thieu-ve-set-trong-javascript/" class="archive-title">Giới thiệu về Set trong Javascript</a>
+        <p class="archive-date">09-10</p>
+      </div>
+    
+  </div>
 </section>
+  
+</main>
 
-<script type="text/javascript">
-  var inputArea = document.querySelector("#search-input");
-  var $resultArea = $("#search-result");
-
-  inputArea.onfocus = function() {
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-      search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    searchFunc(path, 'search-input', 'search-result');
-  }
-
-  inputArea.onkeydown = function(){
-      if(event.keyCode==13){
-          return false
-      }
-  }
-
-  $resultArea.bind("DOMNodeRemoved DOMNodeInserted", function(e) {
-      if (!$(e.target).text()) {
-          $(".search-no-result").show(200);
-      } else {
-          $(".search-no-result").hide();
-      }
-  })
+<script>
+  (function () {
+    var url = 'https://nguyenhaiduc06.github.io/tags/electron/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
+  })();
 </script>
     <div class="scroll-top">
   <span class="arrow-icon"></span>

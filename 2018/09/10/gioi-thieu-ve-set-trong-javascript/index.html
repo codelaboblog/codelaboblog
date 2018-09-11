@@ -10,7 +10,7 @@
   
   <title>
     
-      Giới thiệu về Set trong Javascript | Codelab
+      Giới thiệu về Set trong Javascript | CodeLabo
     
   </title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -53,16 +53,13 @@
 
 
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png" />
-</div>
 
   <body>
     <header class="header fixed-header">
   <div class="header-container">
     <a class="home-link" href="/">
       <div class="logo"></div>
-      <span>Codelab</span>
+      <span>CodeLabo</span>
     </a>
     <ul class="right-list">
       
@@ -173,13 +170,13 @@ animals<span class="token punctuation">.</span><span class="token function">add<
 animals<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'🐶'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 animals<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'🐔'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 animals<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'🐷'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*4*/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 4</span>
 animals<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'🐶'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*4*/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//4</span>
 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string">'🐷'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*true*/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string">'🐷'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
 animals<span class="token punctuation">.</span><span class="token keyword">delete</span><span class="token punctuation">(</span><span class="token string">'🐷'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string">'🐷'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*false*/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string">'🐷'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// false</span>
 
 animals<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>animal <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Hey </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>animal<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -193,14 +190,14 @@ Hey 🐷!
 */</span>
 
 animals<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*0*/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 0</span>
 </code></pre>
 <p>Dưới đây tiếp tục là một ví dụ khác về set. Ở đây, chúng ta truyền vào một array để khởi tạo set. Hãy chú ý vào array đầu tiên: do chứa các giá trị trùng lặp nên không được giữ nguyên kiểu array mà đã bị tách thành 2 giá trị không trùng lặp. Array tiếp theo do chứa các giá trị không trùng lặp nên vẫn được giữ nguyên kiểu array.</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> myAnimals <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'🐷'</span><span class="token punctuation">,</span> <span class="token string">'🐢'</span><span class="token punctuation">,</span> <span class="token string">'🐷'</span><span class="token punctuation">,</span> <span class="token string">'🐷'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 myAnimals<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'🐨'</span><span class="token punctuation">,</span> <span class="token string">'🐑'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 myAnimals<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'Rud'</span><span class="token punctuation">,</span> type<span class="token punctuation">:</span> <span class="token string">'🐢'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myAnimals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*4*/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myAnimals<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 4</span>
 myAnimals<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>animal <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animal<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -213,9 +210,9 @@ Object { name: "Rud", type: "🐢" }
 */</span>
 </code></pre>
 <p>String là kiểu iterable nên cũng có thể truyền vào để khởi tạo set.</p>
-<pre class=" language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Trong set này chỉ gồm những kí tự khác nhau'</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*43*/</span>
+<pre class=" language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Trong set này chỉ gồm những kí tự khác nhau'</span><span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 43</span>
 <span class="token keyword">let</span> sentence <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token string">'Trong set này chỉ gồm những kí tự khác nhau'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sentence<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*23*/</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sentence<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 23</span>
 </code></pre>
 <p>Trong những ví dụ trên, chúng ta đã sử dụng <code>forEach</code> để duyệt qua các giá trị trong set. Ngoài ra, chúng ta cũng có thể sử dụng <code>for...of</code>.</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> moreAnimals <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'🐘 '</span><span class="token punctuation">,</span> <span class="token string">'🐴'</span><span class="token punctuation">,</span> <span class="token string">'🐕'</span><span class="token punctuation">,</span> <span class="token string">'🐇'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -233,17 +230,28 @@ Hi 🐇
 <p>Set còn có phương thức <code>keys</code> và <code>values</code>, và hai phương thức này đều trả về một SetIterator chứa các giá trị trong set.</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> garden <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'🌷'</span><span class="token punctuation">,</span> <span class="token string">'🌹'</span><span class="token punctuation">,</span> <span class="token string">'🌻'</span><span class="token punctuation">,</span> <span class="token string">'🌷'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">let</span> flowers <span class="token operator">=</span> garden<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">/* SetIterator {"🌷", "🌹", "🌻"}  */</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// SetIterator {"🌷", "🌹", "🌻"}</span>
 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* {value: "🌷", done: false} */</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* {value: "🌷", done: false} */</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>done<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<pre class=" language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>flowers<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">/*
+{value: "🌷", done: false}
+{value: "🌹", done: false}
+false
+*/</span>
 </code></pre>
 </section>
     <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#javascript" >
+    <span class="tag-code">javascript</span>
+  </a>
+
+      </div>
     
     <!-- Tags END -->
     
@@ -258,9 +266,17 @@ console<span class="token punctuation">.</span><span class="token function">log<
     
       <ol class="nav">none</ol>
     
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcodelab06&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <div class="fb-page" data-href="https://www.facebook.com/CodeLabo-245934392782217/" data-tabs="timeline" data-height="240" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" style="margin-top: 20px"><blockquote cite="https://www.facebook.com/CodeLabo-245934392782217/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CodeLabo-245934392782217/">CodeLabo</a></blockquote></div>
   </div>
 </aside>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   
   <!-- Catalog END -->
 </main>

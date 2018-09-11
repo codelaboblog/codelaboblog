@@ -50,15 +50,6 @@ pre {
   display: -webkit-flex;
   transform: unset !important;
 }
-.wechat-share {
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-.wechat-share img {
-  width: 400px;
-  height: 400px;
-}
 .app-body {
   padding: 2em 1em;
   margin: 0 auto;
@@ -517,7 +508,6 @@ h2.article-head {
 .article-summary code {
   font-family: 'Source Code Pro', courier, monospace;
   font-size: 16px;
-  background-color: #f5f5f5;
 }
 @media screen and (max-width: 480px) {
   .markdown-content pre,
@@ -540,7 +530,7 @@ h2.article-head {
 }
 .markdown-content p code,
 .article-summary p code {
-  background-color: #e5e5e5;
+  background-color: #f5f5f5;
   color: #2f4858;
   padding: 3px 5px;
   margin: 0 2px;
@@ -608,54 +598,6 @@ h2.article-head {
   display: block;
   margin: 20px auto;
   cursor: zoom-in;
-}
-.markdown-content figure,
-.article-summary figure {
-  background: #f5f5f5;
-  padding: 0 10px;
-  border-radius: 4px;
-  margin: 20px 0;
-  overflow: auto;
-  position: relative;
-  max-width: 680px;
-}
-.markdown-content figure:after,
-.article-summary figure:after {
-  content: attr(data-lang);
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #ccc;
-  text-align: right;
-  font-size: 0.7em;
-  padding: 5px 10px 0;
-  line-height: 15px;
-  height: 15px;
-  font-weight: 500;
-}
-.markdown-content figure .plain .hljs-keyword,
-.article-summary figure .plain .hljs-keyword {
-  color: #2f4858;
-}
-.markdown-content figure .plain .hljs-comment,
-.article-summary figure .plain .hljs-comment {
-  color: #2f4858;
-}
-.markdown-content figure .plain .hljs-built_in,
-.article-summary figure .plain .hljs-built_in {
-  color: #2f4858;
-}
-.markdown-content figure .bash .hljs-keyword,
-.article-summary figure .bash .hljs-keyword {
-  color: #2f4858;
-}
-.markdown-content figure .bash .hljs-comment,
-.article-summary figure .bash .hljs-comment {
-  color: #2f4858;
-}
-.markdown-content figure .bash .hljs-built_in,
-.article-summary figure .bash .hljs-built_in {
-  color: #2f4858;
 }
 .markdown-content > table,
 .article-summary > table {
